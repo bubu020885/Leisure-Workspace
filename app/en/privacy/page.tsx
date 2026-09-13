@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import { LegalPage } from "@/components/legal-page";
+
+export const metadata: Metadata = { title: "Privacy | Leisure Workspace", description: "Privacy information for Leisure Workspace and its locally operating tools." };
+
+export default function PrivacyPage() {
+  return <LegalPage eyebrow="PRIVACY INFORMATION" title="Privacy policy" updated="6 September 2026" locale="en" englishPath="/en/privacy" germanPath="/datenschutz">
+    <section><h2>1. Controller</h2><address>Stefan Burian<br />Ahrfeldstraße 68<br />45136 Essen<br />Germany</address><p>Phone: <a href="tel:+4917661562513">+49 176 61562513</a><br />Email: <a href="mailto:contact@stefanburian.com">contact@stefanburian.com</a></p></section>
+    <section><h2>2. Our approach</h2><p>Leisure Workspace is designed to minimise data collection. No user account or login is required to use the tools. We do not operate our own user tracking and do not use our own analytics or marketing services on this website.</p></section>
+    <section><h2>3. Data within the tools</h2><p>Inputs, calculations and projects created in the tools are not transmitted to us and are not stored in a Leisure Workspace cloud database. Processing takes place locally in the browser or on the device being used.</p><p>If a tool offers an export function, a separate file is created locally and saved on the device. Users alone decide where that file is stored, shared or deleted. Locally stored content can be removed by clearing browser or device data.</p></section>
+    <section><h2>4. Hosting and server logs</h2><p>When the website is accessed, connection data must be processed by the technical hosting infrastructure. This may include the IP address, date and time, requested page, referrer, browser type and operating system. This processing is necessary to provide the website securely and reliably and is based on Article 6(1)(f) GDPR.</p><p>The website is provided through OpenAI Sites and may use Cloudflare infrastructure. Please also see the <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noreferrer">OpenAI privacy policy</a> and the <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noreferrer">Cloudflare privacy policy</a>.</p></section>
+    <section><h2>5. Cookies and local storage</h2><p>Leisure Workspace does not set its own cookies for analytics, advertising or profiling. Technically necessary storage mechanisms may be used by the hosting infrastructure or browser. Information stored locally by the tools remains on the device and is not cloud storage by Leisure Workspace.</p></section>
+    <section><h2>6. Contact</h2><p>If you contact us by email or phone, we process the information you provide to handle your enquiry. The legal basis is Article 6(1)(b) GDPR for contractual or pre-contractual matters and otherwise Article 6(1)(f) GDPR. Data is deleted when its purpose no longer applies and no statutory retention obligations remain.</p></section>
+    <section><h2>7. Your rights</h2><p>Subject to the statutory requirements, you have rights to access, rectification, erasure, restriction of processing, data portability and objection. You may withdraw consent at any time with future effect.</p><p>You also have the right to lodge a complaint with a data protection supervisory authority.</p></section>
+    <section><h2>8. Updates</h2><p>This privacy policy will be updated when the website, tools or technical delivery change.</p></section>
+  </LegalPage>;
+}
